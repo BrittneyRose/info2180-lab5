@@ -21,7 +21,7 @@ if (isset($_GET['country'])){
   if ($results){
     echo "<ul>";
       foreach ($results as $result) {
-        echo "<li>{$result['name']} is ruled by {$result['head_of_state']}</li>";
+        echo "<li>{$result['name']}, Continent: {$result['continent']}, Head of State: {$result['head_of_state']}</li>";
       }
     echo "</ul>";
   }
